@@ -15,4 +15,5 @@ button.onclick = function (e) {
     button.classList.add("showing-debunk");
   }
 };
+
 divs[0].parentElement.appendChild(button);
