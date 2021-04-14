@@ -23,13 +23,13 @@
 //   });
 // }
 
-const endpoint =
-  "https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json";
+// const endpoint =
+//   "https://covid19.mathdro.id/api/countries";
 
-const cities = [];
-fetch(endpoint)
-  .then((blob) => blob.json())
-  .then((data) => cities.push(...data));
+// const cities = [];
+// fetch(endpoint)
+//   .then((blob) => blob.json())
+//   .then((data) => cities.push(...data));
 
-// console.log("hey", cities[0]);
-return cities[0];
+// // console.log("hey", cities[0]);
+// return cities[0];

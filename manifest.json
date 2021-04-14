@@ -7,18 +7,11 @@
     {
       "css": ["taurus.css"],
       "js": ["taurus.js"],
-      "matches": ["https://*.target.com/*"]
+      "matches": ["https://*/*"]
     }
   ],
-  "background": {
-    "service_worker": "background.js"
-  },
-  "permissions": [
-    "storage",
-    "activeTab",
-    "scripting",
-    "https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json"
-  ],
+  "permissions": ["webRequest", "storage", "activeTab", "scripting"],
+  "host_permissions": ["https://covid19.mathdro.id/api/countries"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {

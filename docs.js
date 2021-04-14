@@ -4,3 +4,4 @@
 // https://stackoverflow.com/questions/27574223/any-way-to-pull-data-from-an-api-in-a-chrome-extension
 // https://developer.chrome.com/docs/extensions/mv3/getstarted/
 // https://stackoverflow.com/questions/10257301/accessing-console-and-devtools-of-extensions-background-js
+// https://dev.to/debosthefirst/how-to-build-a-chrome-extension-that-makes-api-calls-1g04
