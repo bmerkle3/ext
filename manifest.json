@@ -7,10 +7,11 @@
     {
       "css": ["taurus.css"],
       "js": ["taurus.js"],
-      "matches": ["https://*.target.com/*"]
+      "matches": ["https://*/*"]
     }
   ],
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["webRequest", "storage", "activeTab", "scripting"],
+  "host_permissions": ["https://covid19.mathdro.id/api/countries"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
