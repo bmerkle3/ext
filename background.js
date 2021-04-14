@@ -25,4 +25,3 @@
 //   .then((data) => cities.push(...data));
 
 // console.log("cities", cities);
-// return cities[0];

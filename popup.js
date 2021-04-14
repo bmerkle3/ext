@@ -22,14 +22,3 @@
 //     document.body.style.backgroundColor = color;
 //   });
 // }
-
-// const endpoint =
-//   "https://covid19.mathdro.id/api/countries";
-
-// const cities = [];
-// fetch(endpoint)
-//   .then((blob) => blob.json())
-//   .then((data) => cities.push(...data));
-
-// // console.log("hey", cities[0]);
-// return cities[0];
