@@ -1,19 +1,20 @@
-.taurus-button {
+.button-plain {
   background-color: #eefae0;
   color: #050800;
   font-size: 3em;
   border-radius: 50%;
 }
 
-.showing-debunk {
+.button-showing-debunk {
   background-color: #72cc18;
   color: #393a37;
 }
 
 .box-visible {
   background-color: rgb(61, 5, 165);
-  color: #393a37;
-  font-size: 7em;
+  color: white;
+  font-size: 16px;
+  min-height: 150px;
 }
 
 .bg-black {
