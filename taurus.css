@@ -17,7 +17,7 @@
   min-height: 150px;
 }
 
-.bg-black {
-  background-color: black;
+.bg-pink {
+  background-color: darkorchid;
   outline: 5px solid green;
 }
