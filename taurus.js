@@ -1,4 +1,4 @@
-// require("dotenv").config();
+require("dotenv").config();
 //  need to get package.json and npm install working for this to actually use the dotenv package
 
 const url = window.location.href;
@@ -19,45 +19,30 @@ button.classList.add("button-plain");
 
 // need to get package.json and npm install working for this to actually use the dotenv package
 let someResponse = [];
-// fetch(
-//   "https://edamam-food-and-grocery-database.p.rapidapi.com/parser?upc=016000123151",
-//   {
-//     method: "GET",
-//     headers: {
-//       "x-rapidapi-key": process.env.API_KEY,
-//       "x-rapidapi-host": "edamam-food-and-grocery-database.p.rapidapi.com",
-//     },
-//   }
-// )
-//   .then((response) => response.json())
-//   .then((dataa) => (someResponse = dataa))
-//   .catch((err) => {
-//     console.log(err);
-//   });
+fetch(
+  "https://edamam-food-and-grocery-database.p.rapidapi.com/parser?upc=016000123151",
+  {
+    method: "GET",
+    headers: {
+      "x-rapidapi-key": process.env.API_KEY,
+      "x-rapidapi-host": "edamam-food-and-grocery-database.p.rapidapi.com",
+    },
+  }
+)
+  .then((response) => response.json())
+  .then((dataa) => (someResponse = dataa))
+  .catch((err) => {
+    console.log(err);
+  });
+// use AWAIT to time this better.
 
 const ul = document.getElementsByTagName("ul");
 const listItems = ul[3].firstChild.childNodes;
 
-// const endpoint = "https://covid19.mathdro.id/api/countries";
-// let countries;
-// use await to time this better.
-// const testing = fetch(endpoint)
-// .then((blob) => blob.json())
-// .then((data) => (countries = data));
-// console.log("countries", testing);
-// too soon here to declare countryName
-
 window.addEventListener("load", function () {
   // the way i listen for page load isn't good. If i click in from the search results page this doesn't run :(
 
-  // console.log(countries["countries"][0]["name"]);
-  // console.log(
-  //   "someResponse here:",
-  //   someResponse.hints[0].food.foodContentsLabel
-  // );
-  // const countryName = countries["countries"][0]["name"];
-  // console.log("a", countryName);
-
+  console.log(someResponse);
   // grab text from the page, match it using regex comparing to keyword list
   const text = ul[3].firstChild.innerHTML;
   const keywords = ["Gluten Free", "Heart Healthy", "sugar free"];
