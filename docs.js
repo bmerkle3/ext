@@ -5,3 +5,6 @@
 // https://developer.chrome.com/docs/extensions/mv3/getstarted/
 // https://stackoverflow.com/questions/10257301/accessing-console-and-devtools-of-extensions-background-js
 // https://dev.to/debosthefirst/how-to-build-a-chrome-extension-that-makes-api-calls-1g04
+
+// can you require npm modules in chrome extension:
+// https://stackoverflow.com/questions/43684452/is-it-possible-to-require-npm-modules-in-a-chrome-extension
